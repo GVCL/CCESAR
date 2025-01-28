@@ -1,0 +1,12 @@
+IMG_WIDTH = 512
+IMG_HEIGHT = 512
+IMG_CHANNELS = 3
+BATCH_SIZE = 12
+EPOCHS = 30
+VAL_SPLIT = 0.2
+NUM_CLASSES = 2
+TRAIN_PATH_NATURAL = r"E:\all_coastline\32bit_final_train\natural_final_32"
+TRAIN_PATH_DEVELOPED = r"E:\all_coastline\32bit_final_train\developed_final_32"
+TEST_PATH = r"E:\all_coastline\32bit_final_train\test\complete"
+MODEL_SAVE_DIR = r"E:\all_coastline\github\saved_models"
+SAVE_PATH = r'E:\all_coastline\github\results'
