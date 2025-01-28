@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore")
 os.environ['KMP_DUPLICATE_LIB_OK']="True"
 def load_and_preprocess_image(img_path):
     img = imread(img_path)[:, :, :IMG_CHANNELS]
-    img = resize(img, (224, 224), mode="constant", preserve_range=True)
+    img = resize(img, (IMG_HEIGHT_CLASSIFICATION, IMG_WIDTH_CLASSIFICATION), mode="constant", preserve_range=True)
     img_array = np.array(img)
     img_array = img_array.astype(np.uint8)
     return img_array
@@ -48,6 +48,7 @@ classification_model = model = keras.models.load_model(
 image_dir = os.path.join(TEST_PATH,'images')
 gt_dir = os.path.join(TEST_PATH,'masks')
 count=0
+os.makedirs(SAVE_PATH)
 for filename in os.listdir(image_dir):
     if filename.endswith(".tiff"):
         count+=1

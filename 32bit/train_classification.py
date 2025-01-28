@@ -10,6 +10,7 @@ import numpy as np
 
 warnings.filterwarnings("ignore")
 
+os.environ['KMP_DUPLICATE_LIB_OK']="True"
 
 train_folder_natural = TRAIN_PATH_NATURAL
 train_folder_developed = TRAIN_PATH_DEVELOPED
@@ -51,4 +52,4 @@ history = model.fit(
 )
 
 
-model.save(os.path.join(MODEL_SAVE_DIR,'32bit-classification.h5'))
+# model.save(os.path.join(MODEL_SAVE_DIR,'32bit-classification.h5'))

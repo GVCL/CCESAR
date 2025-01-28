@@ -39,7 +39,7 @@ def predict_image(model, image_path):
     label = "natural" if predicted_class == 0 else "built"
     return label
 
-
+os.makedirs(SAVE_PATH)
 start_time = time.time()
 
 model_natural = load_model(os.path.join(MODEL_SAVE_DIR,"UNet32-natural.h5"))

@@ -1,0 +1,4 @@
+LAND_POLYGONS_SHP=rf'enter_path_here'
+DATASET_IMAGE_DIR=rf'enter_path_here'
+OUTPUT_INTERMEDIATE_DIR=rf'enter_path_here'
+OUTPUT_DIR=rf'enter_path_here'
