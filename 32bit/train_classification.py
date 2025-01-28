@@ -52,4 +52,4 @@ history = model.fit(
 )
 
 
-# model.save(os.path.join(MODEL_SAVE_DIR,'32bit-classification.h5'))
+model.save(os.path.join(MODEL_SAVE_DIR,'32bit-classification.h5'))
