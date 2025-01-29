@@ -17,7 +17,7 @@ model = unet.get_model()
 results = model.fit(
     X_train, Y_train, validation_split=VAL_SPLIT, batch_size=BATCH_SIZE, epochs=EPOCHS
 )
-model.save(os.path.join(MODEL_SAVE_DIR, "32bit_UNet_natural.h5"))
+model.save(os.path.join(MODEL_SAVE_DIR, "UNet32-natural.h5"))
 
 print("Processing developed training images and masks")
 X_train, Y_train = read_images(TRAIN_PATH_DEVELOPED)
@@ -27,4 +27,4 @@ model = unet.get_model()
 results = model.fit(
     X_train, Y_train, validation_split=VAL_SPLIT, batch_size=BATCH_SIZE, epochs=EPOCHS
 )
-model.save(os.path.join(MODEL_SAVE_DIR, "32bit_UNet_developed.h5"))
+model.save(os.path.join(MODEL_SAVE_DIR, "UNet32-developed.h5.h5"))
